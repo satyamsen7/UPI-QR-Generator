@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow-y: auto; /* Ensures the site is scrollable */
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Header Styles */
+.header {
+    background-color: #86469C;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+.header h1 {
+    align-items: center;
+}
+
+/* Form Styles */
+.form {
+    margin-bottom: 20px;
+    margin-top: 60px; /* Adjusted to push content below fixed header */
+}
+
+.form h2 {
+    color: #86469C;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color: #86469C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #BC7FCD;
+}
+
+/* QR Code Display Styles */
+.qr_code {
+    display: none;
+    text-align: center;
+    margin-top: 80px; /* Adjusted to push content below fixed header */
+}
+
+.qr_code h2 {
+    
+    color: #86469C;
+    margin-bottom: 10px;
+}
+
+.qr_code img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.download_qr {
+    background-color: #86469C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download_qr:hover {
+    background-color: #BC7FCD;
+}
+
+.reset_btn {
+    margin-top: 1rem;
+    background-color: #86469C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset_btn:hover {
+    background-color: #BC7FCD;
+}
+
+/* Payment Link Styles */
+.upi_link_container {
+    margin-top: 20px;
+}
+
+.upi_link {
+    color: #86469C;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.upi_link:hover {
+    text-decoration: underline;
+}
+
+.copy_link {
+    background-color: #86469C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.copy_link:hover {
+    background-color: #BC7FCD;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #86469C;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .form {
+        margin-top: 40px;
+    }
+
+    .qr_code {
+        margin-top: 60px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .form h2,
+    .qr_code h2 {
+        font-size: 1.2rem;
+    }
+
+    .form input,
+    .form button,
+    .download_qr,
+    .reset_btn,
+    .copy_link {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .qr_code {
+        margin-top: 40px;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .form h2,
+    .qr_code h2 {
+        font-size: 1rem;
+    }
+
+    .form input,
+    .form button,
+    .download_qr,
+    .reset_btn,
+    .copy_link {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
